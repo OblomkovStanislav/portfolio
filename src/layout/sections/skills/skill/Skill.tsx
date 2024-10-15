@@ -12,6 +12,7 @@ export const Skill = (props: {iconId: string}) => {
 };
 
 const StyledSkill = styled.div`
+    border: 3px solid black;
     width: 16%;
     text-align: center;
 `

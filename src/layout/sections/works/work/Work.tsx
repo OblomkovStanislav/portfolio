@@ -20,8 +20,8 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
+    border: 3px solid black;
     width: 33%;
-    background-color: green;
 `
 
 const Image = styled.img`

@@ -20,8 +20,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-    min-height: 100vh;
-    background: yellow;
+    border: 3px solid black;
 `
 const Photo = styled.img`
     width: 349px;

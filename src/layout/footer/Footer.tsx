@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/menu/Menu";
 import { Icon } from "../../components/icon/Icon";
+import { Menu } from "../../components/menu/Menu";
+import { SocialList } from "../../components/socialList/SocialList";
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 
@@ -13,40 +14,23 @@ export const Footer = () => {
                 <Logo/>
                 <Phone>+7 (999) 777-77-77</Phone>
                 <Email>oblomkovstanislav@gmail.com</Email>
-                <SocialList>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId={"githubSvg"}/>
-                        </SocialLink>
-                    </SocialItem>
-
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId={"githubSvg"}/>
-                        </SocialLink>
-                    </SocialItem>
-
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId={"githubSvg"}/>
-                        </SocialLink>
-                    </SocialItem>
-                </SocialList>
+                <SocialList/>
             </Top>
 
             <Bottom>
                 <Menu menuItems={items}/>
+                <span>Designed and built by Pavan MG with Love & Coffee</span>
             </Bottom>
         </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
-    background: green;
+    border: 3px solid black;
 `
 
 const Top = styled.div`
-    
+    border: 3px solid black;
 `
 
 const Phone = styled.span`
@@ -57,18 +41,6 @@ const Email = styled.span`
     
 `
 
-const SocialList = styled.ul`
-    display: flex;
-`
-
-const SocialItem = styled.li`
-    
-`
-
-const SocialLink = styled.a`
-    
-`
-
 const Bottom = styled.div`
-    
+    border: 3px solid black;
 `
